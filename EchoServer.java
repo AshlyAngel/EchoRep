@@ -32,6 +32,9 @@ public class EchoServer
 						w.println("Server: "+ line);			
 					}
 				}
+				while ( !line.trim().equals("bye") );
+				client.close();
+			}
 		}
 		catch(Exception err)
 		{

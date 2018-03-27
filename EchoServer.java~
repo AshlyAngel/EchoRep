@@ -27,6 +27,11 @@ public class EchoServer
 				String line;
 				do
 				{
+				line = r.readLine();
+					if ( line != null ){
+						w.println("Server: "+ line);			
+					}
+				}
 		}
 		catch(Exception err)
 		{
