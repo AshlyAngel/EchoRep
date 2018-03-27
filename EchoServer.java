@@ -14,4 +14,14 @@ public class EchoServer
 		}
 	
 	}
+	public void serve()
+	{
+		try
+		{
+		
+		}
+		catch(Exception err)
+		{
+			System.err.println(err);
+		}
 }
