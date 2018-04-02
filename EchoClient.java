@@ -14,7 +14,10 @@ public class EchoClient{
      	do
      	{
      		System.out.print("Client: ");
-        	sendMessage = keyRead.readLine(); 
+        	sendMessage = keyRead.readLine();
+        	pwrite.println(sendMessage);
+        	pwrite.flush();  
+        	receiveMessage = receiveRead.readLine(); 
      	}while(true) ; 
     }
 
