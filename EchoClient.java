@@ -9,9 +9,12 @@ public class EchoClient{
     	PrintWriter pwrite = new PrintWriter(ostream, true);
      	InputStream istream = sock.getInputStream();
      	BufferedReader receiveRead = new BufferedReader(new InputStreamReader(istream));
+     	System.out.println("Client ready for chatting, type 'ok' to exit");
+     	String receiveMessage, sendMessage;
      	do
      	{
-     	
+     		System.out.print("Client: ");
+        	sendMessage = keyRead.readLine(); 
      	}while(true) ; 
     }
 
