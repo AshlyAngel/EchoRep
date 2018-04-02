@@ -18,6 +18,12 @@ public class EchoClient{
         	pwrite.println(sendMessage);
         	pwrite.flush();  
         	receiveMessage = receiveRead.readLine(); 
+        	if((sendMessage.equalsIgnoreCase("ok"))||(receiveMessage.equalsIgnoreCase("ok")))
+        	{
+       			System.out.println("Client exiting..."); 
+			System.exit(0);
+			
+        	}
      	}while(true) ; 
     }
 
