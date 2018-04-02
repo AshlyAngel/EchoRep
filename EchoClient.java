@@ -9,6 +9,10 @@ public class EchoClient{
     	PrintWriter pwrite = new PrintWriter(ostream, true);
      	InputStream istream = sock.getInputStream();
      	BufferedReader receiveRead = new BufferedReader(new InputStreamReader(istream));
+     	do
+     	{
+     	
+     	}while(true) ; 
     }
 
 }
