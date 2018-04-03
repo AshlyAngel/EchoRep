@@ -22,7 +22,8 @@ public class EchoClient
         	System.out.println("Server: " + receiveMessage); 
         	if((sendMessage.equalsIgnoreCase("ok"))||(receiveMessage.equalsIgnoreCase("ok")))
         	{
-       			System.out.println("Client exiting..."); 
+       			System.out.println("Client exiting...");
+       			sock.close(); 
 			System.exit(0);	
         	}
      	}while(true) ; 
