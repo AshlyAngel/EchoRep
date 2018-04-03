@@ -28,3 +28,7 @@ public class EchoServer
         	System.out.println("Server exiting...");	
 		System.exit(0);   
         }   
+        } while(true);	
+    }                    
+}                        
+

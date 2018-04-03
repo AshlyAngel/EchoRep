@@ -23,3 +23,8 @@ public class EchoServer
       	sendMessage = new String(receiveMessage);
       	pwrite.println(sendMessage); 
       	pwrite.flush(); 
+      	if((receiveMessage.equalsIgnoreCase("ok"))||(sendMessage.equalsIgnoreCase("ok"))) 
+        {
+        	System.out.println("Server exiting...");	
+		System.exit(0);   
+        }   
