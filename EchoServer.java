@@ -25,7 +25,8 @@ public class EchoServer
       	pwrite.flush(); 
       	if((receiveMessage.equalsIgnoreCase("ok"))||(sendMessage.equalsIgnoreCase("ok"))) 
         {
-        	System.out.println("Server exiting...");	
+        	System.out.println("Server exiting...");
+        	sock.close();	
 		System.exit(0);   
         }   
         } while(true);	
